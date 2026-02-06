@@ -12,8 +12,21 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div id="root"></div>
+
+    <!-- 🔴 GitHub Pages + HashRouter FIX -->
+    <script>
+      if (!window.location.hash) {
+        window.location.replace(
+          window.location.pathname + "#/"
+        );
+      }
+    </script>
+
+    <!-- React entry -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
+
