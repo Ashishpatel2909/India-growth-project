@@ -6,29 +6,25 @@ import { NavLink } from "react-router-dom";
 const storyData = [
   {
     title: "Science & Technology",
-    text:
-      "From IITs and IISc to ISRO, Mangalyaan, UPI and biotech leadership, India has evolved into a global science and innovation hub.",
+    text: "From IITs and IISc to ISRO, Mangalyaan, UPI and biotech leadership, India has evolved into a global science and innovation hub.",
     bg: "from-sky-100 to-blue-200",
     hover: "hover:shadow-blue-400/60",
   },
   {
     title: "Economic Growth",
-    text:
-      "From a struggling post-colonial economy to the world’s 5th largest GDP, India’s growth is fueled by reforms, startups and digital markets.",
+    text: "From a struggling post-colonial economy to the world’s 5th largest GDP, India’s growth is fueled by reforms, startups and digital markets.",
     bg: "from-emerald-100 to-green-200",
     hover: "hover:shadow-green-400/60",
   },
   {
     title: "Infrastructure Development",
-    text:
-      "India now has the world’s third-largest road network, full village electrification and one of Asia’s largest power grids.",
+    text: "India now has the world’s third-largest road network, full village electrification and one of Asia’s largest power grids.",
     bg: "from-orange-100 to-amber-200",
     hover: "hover:shadow-orange-400/60",
   },
   {
     title: "Human Development",
-    text:
-      "Literacy rose from 12% to 74%, life expectancy doubled, yet healthcare and education quality remain areas to strengthen.",
+    text: "Literacy rose from 12% to 74%, life expectancy doubled, yet healthcare and education quality remain areas to strengthen.",
     bg: "from-purple-100 to-pink-200",
     hover: "hover:shadow-pink-400/60",
   },
@@ -83,12 +79,11 @@ function Home() {
 
   return (
     <section className="overflow-x-hidden bg-black text-white">
-
       {/* ================= HERO ================= */}
       <div
         className="relative min-h-screen flex items-center justify-center text-center px-6"
         style={{
-          backgroundImage: "url('/indiabg.jpg')",
+          backgroundImage: "url(indiabg.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -140,12 +135,8 @@ function Home() {
                 text-gray-900 shadow-lg transition-all duration-300
                 ${item.hover}`}
               >
-                <h3 className="text-xl font-bold mb-3">
-                  {item.title}
-                </h3>
-                <p className="leading-relaxed">
-                  {item.text}
-                </p>
+                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                <p className="leading-relaxed">{item.text}</p>
               </motion.div>
             ))}
           </div>
@@ -175,9 +166,7 @@ function Home() {
                 draggable="false"
               />
               <p className="font-semibold">{r.country}</p>
-              <p className="text-xs text-gray-400 text-center px-2">
-                {r.note}
-              </p>
+              <p className="text-xs text-gray-400 text-center px-2">{r.note}</p>
             </motion.div>
           ))}
         </div>
@@ -201,10 +190,7 @@ function Home() {
             </thead>
             <tbody>
               {comparisons.map((row, i) => (
-                <tr
-                  key={i}
-                  className="border hover:bg-gray-800 transition"
-                >
+                <tr key={i} className="border hover:bg-gray-800 transition">
                   <td className="p-4 border">{row.label}</td>
                   <td className="p-4 border text-orange-400">{row.india}</td>
                   <td className="p-4 border">{row.usa}</td>

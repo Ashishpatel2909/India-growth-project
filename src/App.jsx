@@ -1,7 +1,7 @@
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import Footer from "./Components/Footer";
 import Home from "./pages/Home";
 import Timeline from "./pages/Timeline";
 import MapPage from "./pages/Map";
@@ -23,7 +23,6 @@ function App() {
         <Route path="/about" element={<About />} />
       </Routes>
 
-      {/* Footer will NOT show on Home page */}
       {location.pathname !== "/" && <Footer />}
     </>
   );
