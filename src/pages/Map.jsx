@@ -33,7 +33,6 @@ function Map() {
 
   return (
     <section className="min-h-screen px-6 py-20 bg-gradient-to-br from-blue-50 via-white to-green-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 fade-page">
-
       {/* TITLE */}
       <h1 className="text-5xl font-bold text-center mb-16">
         India – Region-wise Development
@@ -41,11 +40,10 @@ function Map() {
 
       {/* MAP + INFO */}
       <div className="grid md:grid-cols-2 gap-16 max-w-7xl mx-auto items-start">
-
         {/* MAP */}
         <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-xl">
           <img
-            src="/india-map.svg"
+            src="india-map.svg"
             alt="India Map"
             className="w-full h-auto drop-shadow-xl"
           />
@@ -56,9 +54,7 @@ function Map() {
 
         {/* INFO PANEL */}
         <div className="bg-white dark:bg-gray-800 p-10 rounded-2xl shadow-xl">
-          <h2 className="text-3xl font-bold mb-6">
-            {activeRegion} India
-          </h2>
+          <h2 className="text-3xl font-bold mb-6">{activeRegion} India</h2>
 
           <p className="text-sm mb-3">
             <strong>States:</strong> {regionData[activeRegion].states}
@@ -99,15 +95,14 @@ function Map() {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-10">
-          
           {/* CARD 1 */}
           <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
             <h3 className="font-bold text-xl mb-4">
               Agriculture & Rural Economy
             </h3>
             <p className="text-sm mb-4">
-              Agriculture supports more than half of India’s population and plays
-              a crucial role in food security and employment.
+              Agriculture supports more than half of India’s population and
+              plays a crucial role in food security and employment.
             </p>
             <a
               href="https://www.google.com/search?q=India+agriculture+economic+contribution"
@@ -121,9 +116,7 @@ function Map() {
 
           {/* CARD 2 */}
           <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
-            <h3 className="font-bold text-xl mb-4">
-              Urbanization & GDP
-            </h3>
+            <h3 className="font-bold text-xl mb-4">Urbanization & GDP</h3>
             <p className="text-sm mb-4">
               Indian cities generate the majority of GDP through services,
               manufacturing, innovation, and trade.
@@ -156,7 +149,6 @@ function Map() {
               Read policy insights →
             </a>
           </div>
-
         </div>
       </div>
     </section>
